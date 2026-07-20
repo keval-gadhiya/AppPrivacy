@@ -7,8 +7,8 @@ export const site = {
   /** Short, neutral description of what this site is. */
   description:
     "Privacy policies for the mobile apps I build. Every app is offline-first and collects no personal data.",
-  /** Production URL where this static site is hosted. Update before deploying. */
-  url: "https://privacy.decisionjournal.app",
+  /** Production URL where this static site is hosted (GitHub Pages). */
+  url: "https://keval-gadhiya.github.io/AppPrivacy",
   /** The publisher / developer name shown in copyright lines by default. */
   publisher: "DecisionJournal",
   /** Default contact address; individual apps can override per policy. */
