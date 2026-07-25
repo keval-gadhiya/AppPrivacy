@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   },
   description: site.description,
   applicationName: site.name,
+  authors: [{ name: site.publisher }],
+  creator: site.publisher,
   robots: {
     index: true,
     follow: true,
@@ -48,6 +50,12 @@ export const metadata: Metadata = {
     card: "summary",
     title: site.name,
     description: site.description,
+  },
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
 };
 

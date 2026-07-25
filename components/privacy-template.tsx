@@ -70,6 +70,7 @@ export function PrivacyTemplate({
   contactEmail,
   privacySummary,
   sections,
+  relatedLinks,
 }: PrivacyContent) {
   const [intro, ...detailSections] = sections;
   const year = new Date(`${lastUpdated}T00:00:00Z`).getUTCFullYear();
@@ -163,6 +164,19 @@ export function PrivacyTemplate({
 
         {/* Copyright */}
         <footer className="mt-16 border-t border-line pt-8 sm:mt-20">
+          {relatedLinks && relatedLinks.length > 0 ? (
+            <nav aria-label="Related pages" className="mb-6 flex flex-wrap gap-x-5 gap-y-2">
+              {relatedLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-ink-body underline decoration-line-strong underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          ) : null}
           <p className="text-sm text-ink-muted">
             © {year} {site.publisher}. All rights reserved.
           </p>

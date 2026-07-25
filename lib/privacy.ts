@@ -27,8 +27,12 @@ export type DefinePrivacyInput = {
   howDataIsStored: SectionCopy;
   /** Third-Party Services. */
   thirdPartyServices: SectionCopy;
+  /** Optional sections inserted before Children's Privacy (e.g. Notifications). */
+  extraSections?: PrivacySection[];
   /** Contact email; falls back to the site-wide default. */
   contactEmail?: string;
+  /** Optional related links shown in the privacy footer (Support, Terms). */
+  relatedLinks?: { label: string; href: string }[];
 };
 
 /** Shared Children's Privacy — reused on every policy page. */
@@ -70,7 +74,9 @@ export function definePrivacy(input: DefinePrivacyInput): AppEntry {
     informationWeCollect,
     howDataIsStored,
     thirdPartyServices,
+    extraSections = [],
     contactEmail = site.defaultContactEmail,
+    relatedLinks,
   } = input;
 
   const sections: PrivacySection[] = [
@@ -97,6 +103,7 @@ export function definePrivacy(input: DefinePrivacyInput): AppEntry {
       paragraphs: thirdPartyServices.paragraphs,
       bullets: thirdPartyServices.bullets,
     },
+    ...extraSections,
     CHILDRENS_PRIVACY,
     CHANGES_TO_POLICY,
   ];
@@ -107,6 +114,7 @@ export function definePrivacy(input: DefinePrivacyInput): AppEntry {
     contactEmail,
     privacySummary,
     sections,
+    relatedLinks,
   };
 
   return { slug, name, tagline, description, content };

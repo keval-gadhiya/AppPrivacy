@@ -97,40 +97,65 @@ export const apps: AppEntry[] = [
   definePrivacy({
     slug: "naam-jap",
     name: "Naam Jap",
-    tagline: "Offline Naam Jap Companion",
+    tagline: "Offline Mantra & Mala Counter",
     lastUpdated: "2026-07-25",
     description:
-      "A calm, offline naam jap counter for daily practice and mindful rhythm.",
+      "Naam Jap is an offline mantra and mala counter that helps users maintain their daily spiritual practice.",
+    contactEmail: "support@naamjap.app",
     introduction: [
-      "Naam Jap is a private, offline-first naam jap companion. It helps you keep daily counts, manage your naam library, and build a calm practice rhythm — entirely on your device.",
-      "We do not require an account, operate practice servers, or collect your personal information.",
+      "Naam Jap is an offline mantra and mala counter that helps users maintain their daily spiritual practice. Keep daily counts, manage your naam library, and build a calm practice rhythm — entirely on your device.",
+      "Naam Jap does not require an account or login. We do not operate practice servers, and we do not collect your personal information.",
       "This Privacy Policy explains how Naam Jap handles your information.",
     ],
     privacySummary: [
-      "Practice data stored locally",
       "No account required",
-      "No cloud sync",
+      "No login",
       "No analytics",
       "No advertising",
-      "Offline-first",
+      "No tracking",
+      "No cloud sync",
+      "No third-party data sharing",
+      "No personal data collected",
     ],
     informationWeCollect: {
       paragraphs: [
-        "Naam Jap does not collect personal information.",
-        "Your naam library, daily counts, goals, preferences, and reminder settings remain stored only on your device.",
+        "Naam Jap does not collect any personal information.",
+        "Everything you create — including your optional display name, naam library, daily counts, goals, appearance preference, haptic preferences, and reminder settings — remains stored only on your device.",
       ],
     },
     howDataIsStored: {
       paragraphs: [
-        "All practice data is stored locally on your device.",
-        "No information is transmitted to external servers.",
+        "All practice data stays entirely on your device using on-device storage.",
+        "There is no cloud sync and no remote server operated by us for practice data. No information is transmitted to external servers.",
+        "If you enable system backups (such as iCloud Backup or Google backup), your app data may be included in those encrypted backups, which are governed by Apple’s or Google’s privacy policies. Deleting the app removes its data from your device.",
       ],
     },
     thirdPartyServices: {
       paragraphs: [
-        "Naam Jap does not use analytics, advertising, authentication, or cloud services for practice data.",
+        "Naam Jap does not share data with third parties. The app does not use:",
+      ],
+      bullets: [
+        "Analytics SDKs",
+        "Advertising SDKs",
+        "Tracking or attribution tools",
+        "Authentication services",
+        "Cloud databases for practice data",
       ],
     },
+    extraSections: [
+      {
+        id: "notifications",
+        heading: "Notifications",
+        paragraphs: [
+          "If you enable the daily reminder, the operating system delivers a local notification at the time you chose.",
+          "Local notifications are used only for reminder functionality. Reminder scheduling stays on your device and notification data is never sent to external servers.",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: "Support", href: "/privacy/naam-jap/support/" },
+      { label: "Terms of Service", href: "/privacy/naam-jap/terms/" },
+    ],
   }),
 
   // Day 4

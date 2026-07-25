@@ -31,6 +31,8 @@ export type PrivacyContent = {
    * Introduction (rendered as a lead), and the rest are numbered.
    */
   sections: PrivacySection[];
+  /** Optional related links (e.g. Support, Terms) shown above copyright. */
+  relatedLinks?: { label: string; href: string }[];
 };
 
 /** A registered app: routing/index metadata plus its policy content. */

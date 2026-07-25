@@ -24,18 +24,19 @@ export async function generateMetadata({
 
   const title = `${app.name} Privacy Policy`;
   const path = `/privacy/${app.slug}/`;
+  const description = app.description;
   return {
     title,
-    description: app.description,
+    description,
     alternates: { canonical: path },
     openGraph: {
       type: "article",
       title,
-      description: app.description,
+      description,
       url: `${site.url}${path}`,
       siteName: site.name,
     },
-    twitter: { card: "summary", title, description: app.description },
+    twitter: { card: "summary", title, description },
   };
 }
 

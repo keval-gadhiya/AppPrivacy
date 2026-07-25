@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { apps } from "@/lib/apps";
+import { naamJapMeta, naamJapPaths } from "@/lib/naam-jap";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -19,5 +20,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [home, ...policies];
+  const naamJapExtra = [
+    {
+      url: `${site.url}${naamJapPaths.support}`,
+      lastModified: new Date(`${naamJapMeta.lastUpdated}T00:00:00Z`),
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${site.url}${naamJapPaths.terms}`,
+      lastModified: new Date(`${naamJapMeta.lastUpdated}T00:00:00Z`),
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${site.url}/naam-jap/`,
+      lastModified: new Date(`${naamJapMeta.lastUpdated}T00:00:00Z`),
+      changeFrequency: "yearly" as const,
+      priority: 0.75,
+    },
+  ];
+
+  return [home, ...policies, ...naamJapExtra];
 }
