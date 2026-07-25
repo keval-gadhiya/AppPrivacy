@@ -37,7 +37,9 @@ export type PrivacyContent = {
 export type AppEntry = {
   slug: string;
   name: string;
-  /** One line used for the index list and the SEO description. */
+  /** Short tagline shown on the index list under the app name. */
+  tagline: string;
+  /** One-line description for the index list and SEO. */
   description: string;
   content: PrivacyContent;
 };

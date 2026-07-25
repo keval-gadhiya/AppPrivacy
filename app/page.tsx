@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { appsByName } from "@/lib/apps";
+import { appsInOrder } from "@/lib/apps";
 import { site } from "@/lib/site";
 import { formatDate } from "@/lib/utils";
 import { ArrowIcon } from "@/components/icons";
@@ -24,7 +24,7 @@ export default function HomePage() {
 
         <nav aria-label="Privacy policies" className="mt-12 sm:mt-14">
           <ul>
-            {appsByName.map((app) => (
+            {appsInOrder.map((app) => (
               <li key={app.slug}>
                 <Link
                   href={`/privacy/${app.slug}/`}
@@ -34,7 +34,10 @@ export default function HomePage() {
                     <span className="block text-[1.15rem] font-semibold tracking-tightish text-ink">
                       {app.name}
                     </span>
-                    <span className="mt-1 block text-[0.95rem] leading-snug text-ink-muted">
+                    <span className="mt-1 block text-[0.95rem] leading-snug text-ink-body">
+                      {app.tagline}
+                    </span>
+                    <span className="mt-0.5 block text-[0.95rem] leading-snug text-ink-muted">
                       {app.description}
                     </span>
                   </span>

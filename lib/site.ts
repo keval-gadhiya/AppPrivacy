@@ -9,8 +9,8 @@ export const site = {
     "Privacy policies for the mobile apps I build. Every app is offline-first and collects no personal data.",
   /** Production URL where this static site is hosted (GitHub Pages). */
   url: "https://keval-gadhiya.github.io/AppPrivacy",
-  /** The publisher / developer name shown in copyright lines by default. */
-  publisher: "DecisionJournal",
+  /** The publisher / developer name shown in copyright and contact. */
+  publisher: "Keval Gadhiya",
   /** Default contact address; individual apps can override per policy. */
   defaultContactEmail: "privacy@decisionjournal.app",
 } as const;

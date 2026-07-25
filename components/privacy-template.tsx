@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import type { PrivacyContent, PrivacySection } from "@/lib/types";
+import { site } from "@/lib/site";
 import { formatDate } from "@/lib/utils";
 import { PrivacySummary } from "./privacy-summary";
 
@@ -56,10 +57,12 @@ function PolicySection({
  * The one reusable privacy policy layout. Every app renders through this by
  * passing its own `PrivacyContent`.
  *
- * Order (per requirements): App Name + Last Updated → Introduction → Privacy at
- * a Glance → numbered sections → Contact → Copyright. By convention the first
- * entry in `sections` is the Introduction (shown as a lead, unnumbered) and the
- * remaining entries are numbered 01…N. Contact is rendered from `contactEmail`.
+ * Order: App Name + Last Updated → Introduction → Privacy at a Glance →
+ * Information We Collect → How Your Data Is Stored → Third-Party Services →
+ * Children's Privacy → Changes to This Policy → Contact → Copyright.
+ * By convention the first entry in `sections` is the Introduction (shown as a
+ * lead, unnumbered) and the remaining entries are numbered 01…N. Contact is
+ * rendered from site contact details.
  */
 export function PrivacyTemplate({
   title,
@@ -133,19 +136,27 @@ export function PrivacyTemplate({
           </div>
           <div className="mt-5 space-y-4 text-[1.02rem] leading-relaxed text-ink-body">
             <p>
-              If you have any questions, concerns, or requests regarding this Privacy
-              Policy or your privacy while using {title}, please get in touch. We&apos;re
-              happy to help.
+              If you have any questions or concerns about this Privacy Policy or the
+              application, please contact:
             </p>
+            <p className="font-medium text-ink">{site.publisher}</p>
             <p>
-              You can reach us at{" "}
+              Email:{" "}
               <a
                 href={`mailto:${contactEmail}`}
                 className="font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:decoration-ink"
               >
                 {contactEmail}
               </a>
-              .
+            </p>
+            <p>
+              Privacy Website:{" "}
+              <a
+                href={site.url}
+                className="font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:decoration-ink"
+              >
+                {site.url}/
+              </a>
             </p>
           </div>
         </section>
@@ -153,7 +164,7 @@ export function PrivacyTemplate({
         {/* Copyright */}
         <footer className="mt-16 border-t border-line pt-8 sm:mt-20">
           <p className="text-sm text-ink-muted">
-            © {year} {title}. All rights reserved.
+            © {year} {site.publisher}. All rights reserved.
           </p>
           <p className="mt-2 text-sm">
             <Link
