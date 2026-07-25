@@ -95,17 +95,19 @@ export const apps: AppEntry[] = [
 
   // Day 3
   definePrivacy({
-    slug: "mantra",
-    name: "Mantra",
-    tagline: "Daily Mantra Companion",
-    lastUpdated: "2026-07-20",
-    description: "Track daily mantra repetitions and build a mindful routine.",
+    slug: "naam-jap",
+    name: "Naam Jap",
+    tagline: "Offline Naam Jap Companion",
+    lastUpdated: "2026-07-25",
+    description:
+      "A calm, offline naam jap counter for daily practice and mindful rhythm.",
     introduction: [
-      "Mantra helps users build a mindful daily routine by tracking mantra repetitions and meditation sessions.",
-      "Everything you record stays completely private on your own device.",
+      "Naam Jap is a private, offline-first naam jap companion. It helps you keep daily counts, manage your naam library, and build a calm practice rhythm — entirely on your device.",
+      "We do not require an account, operate practice servers, or collect your personal information.",
+      "This Privacy Policy explains how Naam Jap handles your information.",
     ],
     privacySummary: [
-      "Sessions stored locally",
+      "Practice data stored locally",
       "No account required",
       "No cloud sync",
       "No analytics",
@@ -114,19 +116,19 @@ export const apps: AppEntry[] = [
     ],
     informationWeCollect: {
       paragraphs: [
-        "Mantra does not collect personal information.",
-        "Your mantra counts, sessions, and preferences remain stored locally.",
+        "Naam Jap does not collect personal information.",
+        "Your naam library, daily counts, goals, preferences, and reminder settings remain stored only on your device.",
       ],
     },
     howDataIsStored: {
       paragraphs: [
-        "All information is stored securely on your device.",
-        "No information leaves your phone.",
+        "All practice data is stored locally on your device.",
+        "No information is transmitted to external servers.",
       ],
     },
     thirdPartyServices: {
       paragraphs: [
-        "Mantra does not integrate with advertising, analytics, AI services, or cloud providers.",
+        "Naam Jap does not use analytics, advertising, authentication, or cloud services for practice data.",
       ],
     },
   }),
