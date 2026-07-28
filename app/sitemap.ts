@@ -41,5 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [home, ...policies, ...naamJapExtra];
+  const dailyTodoSupport = {
+    url: `${site.url}/support/dailytodo/`,
+    lastModified: new Date("2026-07-28T00:00:00Z"),
+    changeFrequency: "yearly" as const,
+    priority: 0.7,
+  };
+
+  return [home, ...policies, ...naamJapExtra, dailyTodoSupport];
 }

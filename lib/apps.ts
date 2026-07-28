@@ -352,6 +352,59 @@ export const apps: AppEntry[] = [
       ],
     },
   }),
+
+  // Day 10
+  definePrivacy({
+    slug: "dailytodo",
+    name: "Daily Todo",
+    tagline: "Calm Offline Weekly Planner",
+    lastUpdated: "2026-07-28",
+    description:
+      "An offline daily todo for planning your week and reviewing past completion — stored only on your device.",
+    introduction: [
+      "Daily Todo is a calm, offline-first weekly planner. Plan tasks across the week, mark them complete, and review your history with a contribution-style calendar — entirely on your iPhone.",
+      "Daily Todo does not require an account or login. We do not operate servers for your tasks, and we do not collect your personal information.",
+      "This Privacy Policy explains how Daily Todo handles your information.",
+    ],
+    privacySummary: [
+      "Tasks stored locally",
+      "No account required",
+      "No cloud sync",
+      "No analytics",
+      "No advertising",
+      "No tracking",
+      "Offline only",
+    ],
+    informationWeCollect: {
+      paragraphs: [
+        "Daily Todo does not collect any personal information.",
+        "Everything you create — including task titles, completion status, dates, sort order, and appearance preference — remains stored only on your device.",
+      ],
+    },
+    howDataIsStored: {
+      paragraphs: [
+        "All tasks and preferences are stored locally using on-device storage.",
+        "There is no cloud sync and no remote server operated by us for your tasks. No information is transmitted to external servers.",
+        "If you enable system backups (such as iCloud Backup), your app data may be included in those encrypted backups, which are governed by Apple’s privacy policies. Deleting the app removes its data from your device.",
+      ],
+    },
+    thirdPartyServices: {
+      paragraphs: [
+        "Daily Todo does not share data with third parties. The app does not use:",
+      ],
+      bullets: [
+        "Analytics SDKs",
+        "Advertising SDKs",
+        "Tracking or attribution tools",
+        "Authentication services",
+        "Cloud databases",
+        "Runtime font downloads or other network services",
+      ],
+    },
+    relatedLinks: [
+      { label: "Support", href: "/support/dailytodo/" },
+    ],
+  }),
 ];
 
 /* ── Derived lookups (do not edit) ───────────────────────────────────────── */
