@@ -405,6 +405,95 @@ export const apps: AppEntry[] = [
       { label: "Support", href: "/support/dailytodo/" },
     ],
   }),
+
+  // Day 11
+  definePrivacy({
+    slug: "remain",
+    name: "Time Remaining",
+    tagline: "Make what's left visible",
+    lastUpdated: "2026-07-31",
+    description:
+      "Visualize the remaining time in your day, week, month, year and life — completely offline.",
+    introduction: [
+      "Time Remaining is a calm, offline reflection app that helps you visualize the remaining time in your day, week, month, year, and life. It is not a productivity tracker — it makes what is left visible so you can reflect with clarity.",
+      "You can see remaining hours today, remaining days in the week, month, and year, view life as grids, save important future moments, and customize assumed lifespan, appearance, week start, and time format — entirely on your device.",
+      "Time Remaining does not require an account or login. There is no registration. We do not operate servers for your data, and we do not collect your personal information.",
+      "This Privacy Policy explains how Time Remaining handles your information.",
+    ],
+    privacySummary: [
+      "Preferences and moments stored locally",
+      "No account required",
+      "No login",
+      "No registration",
+      "No cloud sync",
+      "No analytics",
+      "No advertising",
+      "No tracking",
+      "Offline-first",
+    ],
+    informationWeCollect: {
+      paragraphs: [
+        "Time Remaining does not collect any personal information.",
+        "Any data you enter stays only on your device. Locally stored data may include:",
+      ],
+      bullets: [
+        "Date of Birth",
+        "Assumed Lifespan",
+        "Theme Preference",
+        "Week Start Preference",
+        "Time Format Preference",
+        "Personal Moments",
+      ],
+    },
+    howDataIsStored: {
+      paragraphs: [
+        "All of your data is stored locally using on-device storage.",
+        "Time Remaining works entirely offline. No internet connection is required.",
+        "There is no cloud sync, no remote server operated by us, and no data uploads. Nothing is transmitted to external servers.",
+        "If you enable system backups (such as iCloud Backup), your app data may be included in those encrypted backups, which are governed by Apple’s privacy policies. Deleting the app removes its data from your device.",
+      ],
+    },
+    thirdPartyServices: {
+      paragraphs: [
+        "Time Remaining does not use third-party services. The app does not include:",
+      ],
+      bullets: [
+        "Analytics",
+        "Advertising",
+        "Tracking or attribution tools",
+        "Authentication services",
+        "Cloud databases",
+        "Any other third-party SDKs that collect or transmit your data",
+      ],
+    },
+    extraSections: [
+      {
+        id: "permissions",
+        heading: "Permissions",
+        paragraphs: [
+          "Time Remaining does not request sensitive device permissions. Specifically:",
+        ],
+        bullets: [
+          "Camera — No",
+          "Photos — No",
+          "Location — No",
+          "Contacts — No",
+          "Bluetooth — No",
+          "Microphone — No",
+          "Notifications — No",
+          "Tracking — No",
+        ],
+      },
+      {
+        id: "data-deletion",
+        heading: "Data Deletion",
+        paragraphs: [
+          "Deleting the application removes all locally stored data from your device.",
+        ],
+      },
+    ],
+    relatedLinks: [{ label: "Support", href: "/support/remain/" }],
+  }),
 ];
 
 /* ── Derived lookups (do not edit) ───────────────────────────────────────── */

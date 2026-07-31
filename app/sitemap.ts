@@ -48,5 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   };
 
-  return [home, ...policies, ...naamJapExtra, dailyTodoSupport];
+  const remainSupport = {
+    url: `${site.url}/support/remain/`,
+    lastModified: new Date("2026-07-31T00:00:00Z"),
+    changeFrequency: "yearly" as const,
+    priority: 0.7,
+  };
+
+  return [home, ...policies, ...naamJapExtra, dailyTodoSupport, remainSupport];
 }
