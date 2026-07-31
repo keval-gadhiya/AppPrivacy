@@ -12,7 +12,7 @@ const path = naamJapPaths.support;
 export const metadata: Metadata = {
   title: "Naam Jap Support",
   description:
-    "Get help with Naam Jap — FAQ, reminders, reset progress, and contact support@naamjap.app.",
+    "Get help with Naam Jap — FAQ, reminders, reset progress, and contact kevalgadhiya2011@gmail.com.",
   alternates: { canonical: path },
   openGraph: {
     type: "website",

@@ -101,7 +101,7 @@ export const apps: AppEntry[] = [
     lastUpdated: "2026-07-25",
     description:
       "Naam Jap is an offline mantra and mala counter that helps users maintain their daily spiritual practice.",
-    contactEmail: "support@naamjap.app",
+    contactEmail: "kevalgadhiya2011@gmail.com",
     introduction: [
       "Naam Jap is an offline mantra and mala counter that helps users maintain their daily spiritual practice. Keep daily counts, manage your naam library, and build a calm practice rhythm — entirely on your device.",
       "Naam Jap does not require an account or login. We do not operate practice servers, and we do not collect your personal information.",

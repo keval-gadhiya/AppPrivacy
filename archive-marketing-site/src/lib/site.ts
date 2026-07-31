@@ -4,7 +4,7 @@ export const site = {
   description:
     "Capture important decisions, reflect on outcomes, and improve your judgment over time.",
   url: "https://decisionjournal.app",
-  email: "hello@decisionjournal.app",
+  email: "kevalgadhiya2011@gmail.com",
   version: "1.0.0",
   platforms: "iOS & Android",
   appStoreUrl: "#",

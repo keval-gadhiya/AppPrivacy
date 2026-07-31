@@ -9,7 +9,7 @@ export const naamJapPaths = {
 
 export const naamJapMeta = {
   name: "Naam Jap",
-  email: "support@naamjap.app",
+  email: "kevalgadhiya2011@gmail.com",
   lastUpdated: "2026-07-25",
   description:
     "Naam Jap is an offline mantra and mala counter that helps users maintain their daily spiritual practice.",

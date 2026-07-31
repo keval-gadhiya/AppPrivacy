@@ -12,5 +12,5 @@ export const site = {
   /** The publisher / developer name shown in copyright and contact. */
   publisher: "Keval Gadhiya",
   /** Default contact address; individual apps can override per policy. */
-  defaultContactEmail: "privacy@decisionjournal.app",
+  defaultContactEmail: "kevalgadhiya2011@gmail.com",
 } as const;
